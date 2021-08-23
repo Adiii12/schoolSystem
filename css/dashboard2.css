@@ -1,0 +1,127 @@
+.chart .row {
+  width: 94%;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f1f3;
+}
+.chart .row .chart_left,
+.chart_right {
+  padding: 25px;
+  width: 49%;
+  background-color: #fff;
+}
+.chart .row .chart_left h1 {
+  color: black;
+}
+.chart .row .chart_right h1 {
+  color: black;
+}
+.chart .row .chart_left canvas {
+  display: block;
+  margin: auto;
+}
+.chart .row .chart_left .chart_footer .row {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px auto 0px auto;
+  background-color: transparent;
+}
+.chart .row .chart_left .chart_footer .row .chart_footer_left {
+  width: 50%;
+  border-right: 2px solid #ddd;
+}
+.chart .row .chart_left .chart_footer .row .chart_footer_left hr {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border: 4px solid rgba(154, 205, 50, 1);
+  border-radius: 5px;
+  background-color: rgba(154, 205, 50, 1);
+  width: 70px;
+}
+.chart .row .chart_left .chart_footer .row .chart_footer_left span {
+  margin-bottom: 15px;
+  color: #a5b9d4;
+}
+.chart .row .chart_left .chart_footer .row .chart_footer_right hr {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border: 4px solid rgba(247, 202, 24, 1);
+  border-radius: 5px;
+  background-color: rgba(247, 202, 24, 1);
+  width: 70px;
+}
+.chart .row .chart_left .chart_footer .row .chart_footer_right span {
+  margin-bottom: 15px;
+  color: #a5b9d4;
+}
+/* teachers chart section start =========================== */
+.chart .row .chart_right .top_Male_female_chart {
+  display: flex;
+  justify-content: space-between;
+}
+.chart .row .chart_right .top_Male_female_chart button {
+  background-color: yellowgreen;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid yellowgreen;
+  border-radius: 3px 7px;
+}
+.chart .row .chart_right canvas {
+  display: block;
+  margin: auto;
+}
+.chart .row .chart_right .chart_footer .row {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px auto 0px auto;
+  background-color: transparent;
+}
+.chart .row .chart_right .chart_footer .row .chart_footer_left {
+  width: 50%;
+  border-right: 2px solid #ddd;
+}
+.chart .row .chart_right .chart_footer .row .chart_footer_left hr {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border: 4px solid rgba(154, 205, 50, 1);
+  border-radius: 5px;
+  background-color: rgba(154, 205, 50, 1);
+  width: 70px;
+}
+.chart .row .chart_right .chart_footer .row .chart_footer_left span {
+  margin-bottom: 15px;
+  color: #a5b9d4;
+}
+.chart .row .chart_right .chart_footer .row .chart_footer_right hr {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border: 4px solid rgba(247, 202, 24, 1);
+  border-radius: 5px;
+  background-color: rgba(247, 202, 24, 1);
+  width: 70px;
+}
+.chart .row .chart_right .chart_footer .row .chart_footer_right span {
+  margin-bottom: 15px;
+  color: #a5b9d4;
+}
+/* A5B9D4 */
+/* 'rgba(154,205,50,0.7)', */
+/* .chart .row .chart_left #myChart2 {
+  width: 300px;
+  height: 300px;
+} */
+/* fee chart ================== */
+#fee_chart {
+  width: 94%;
+  margin: 25px auto;
+  background-color: #fff;
+  padding: 25px;
+}
+#fee_chart h1 {
+  color: #000;
+  margin: 15px 0px;
+}
+#fee_chart .fee_chart_inner {
+  width: 100%;
+}

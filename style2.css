@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sidebar {
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: black;
+  width: 100%;
+  background: #de6161;
+  text-align: center;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-right: -100%;
+  transition: 0.7s;
+}
+.navSlide {
+  margin-right: 0;
+}
+#sideBarText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+.nav-section a {
+  transition: 0s;
+  width: 100%;
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+}
+.menu-button {
+  top: 0;
+  margin-left: 20px;
+  margin-top: 12px;
+  cursor: pointer;
+  position: fixed;
+  padding: 15px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+  background-color: white;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+  background-color: white;
+}
+.content {
+  text-align: center;
+  margin-top: 120px;
+}
+@media screen and (min-width: 480px) {
+}

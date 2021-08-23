@@ -1,0 +1,62 @@
+/* stdent details section start here -=================== */
+.student_details_modal_body_inner {
+    padding: 15px;
+    background-color: #f0f1f3;
+    
+  }
+  .student_details_modal_body_inner .row {
+    display: flex;
+    background-color: #f0f1f3;
+  }
+  .student_details_modal_body_inner .row .student_details_left {
+    width: 30%;
+   
+  }
+  .student_details_modal_body_inner .row .student_details_left img {
+    display: block;
+    margin: 25px auto;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+  }
+  .student_details_modal_body_inner .row .student_details_left h1 {
+    text-align: center;
+    color : #000;
+
+  }
+  .student_details_modal_body_inner .row .student_details_right {
+    width: 70%;
+
+  }
+  .student_details_modal_body_inner .row .student_details_right h3 {
+    width: 300px;
+    margin:25px 10px
+  }
+  .student_details_modal_body_inner .row .student_details_right .first_detail,
+  .second_detail,
+  .third_detail,
+  .fourth_detail,
+  .fifth_detail,
+  .sixth_detail {
+    display: flex;
+    align-items: center;
+  }
+  .student_details_modal_body_inner .row .student_details_right
+   .first_detail h3,
+  .second_detail h3,
+  .third_detail h3,
+  .fourth_detail h3,
+  .fifth_detail h3,
+  .sixth_detail h3{
+      color:#000;
+      margin:25px 0px;
+  }
+  .student_details_modal_body_inner .row .student_details_right
+   .first_detail p,
+  .second_detail p,
+  .third_detail p,
+  .fourth_detail p,
+  .fifth_detail p,
+  .sixth_detail p{
+      color:#000;
+  }

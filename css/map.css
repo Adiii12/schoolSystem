@@ -1,0 +1,38 @@
+.map {
+    padding: 15px 15px;
+  }
+  .map h1 {
+    color: #000;
+  }
+  .map .map_location {
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    color: rgb(90, 90, 90);
+  }
+  .map .map_location .fa-chevron-right {
+    margin: 0px 10px;
+  }
+  .map .map_location .all_map_para {
+    color: yellowgreen;
+  }
+  .map .show_map {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+  }
+  .map .show_map h1 {
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+  .map .show_map .show_map_inner iframe{
+      width:100%;
+      height:800px;
+      margin:25px 0px;
+  }
+  .map h2{
+      font-size:50px;
+      color:#000;
+      margin:25px 0px;
+  }
+  

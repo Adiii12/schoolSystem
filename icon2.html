@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar" style="border: 1px solid red; height: 100px">
+      <div class="menu-button" onclick="menuAnimation(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+    <div class="sidebar" id="slideNav">
+      <div class="nav-section" id="sideBarText">
+        <div class="item"><a href="#">Home</a></div>
+        <div class="item"><a href="#">Portfolio</a></div>
+        <div class="item"><a href="#">About</a></div>
+        <div class="item"><a href="#">Blog</a></div>
+        <div class="item"><a href="#">Contact</a></div>
+      </div>
+    </div>
+    <div class="content">
+      <h1>CSS and JS Sliding Toggle Side Navigation</h1>
+      <h2>By Adil</h2>
+    </div>
+
+    <script>
+      function menuAnimation(x) {
+        x.classList.toggle("change");
+        var element = document.getElementById("slideNav");
+        element.classList.toggle("navSlide");
+      }
+    </script>
+  </body>
+</html>

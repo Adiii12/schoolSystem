@@ -1,0 +1,318 @@
+body {
+  background-color: #f0f1f3;
+}
+.hostel {
+  padding: 15px 15px;
+}
+.hostel h1 {
+  color: #000;
+}
+.hostel .hostel_location {
+  margin: 15px 0px;
+  display: flex;
+  align-items: center;
+  color: rgb(90, 90, 90);
+}
+.hostel .hostel_location .fa-chevron-right {
+  margin: 0px 10px;
+}
+.hostel .hostel_location .all_hostel_para {
+  color: yellowgreen;
+}
+.hostel .add_new_hostel {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+}
+.hostel .add_new_hostel h1 {
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+.hostel .add_new_hostel .row1 {
+  display: flex;
+  justify-content: space-between;
+}
+.hostel .add_new_hostel .row1 .row1_inner1,
+.row1_inner2 {
+  width: 49%;
+}
+.hostel .add_new_hostel .row1 .row1_inner1 label {
+  color: #cecece;
+  font-size: 17px;
+  font-weight: 550;
+}
+.hostel .add_new_hostel .row1 .row1_inner2 label {
+  color: #cecece;
+  font-size: 17px;
+  font-weight: 550;
+}
+.hostel .add_new_hostel .row1 .row1_inner1 input {
+  width: 100%;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background-color: #f0f1f3;
+  margin: 10px 0px 15px 0px;
+  padding: 15px;
+}
+.hostel .add_new_hostel .row1 .row1_inner2 input {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: #f0f1f3;
+  margin: 10px 0px 15px 0px;
+  padding: 15px;
+}
+/* for row two============================= */
+.hostel .add_new_hostel .row2 {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.hostel .add_new_hostel .row2 .row2_inner1 label {
+  color: #cecece;
+  font-size: 17px;
+  font-weight: 550;
+}
+.hostel .add_new_hostel .row2 .row2_inner2 label {
+  color: #cecece;
+  font-size: 17px;
+  font-weight: 550;
+}
+.hostel .add_new_hostel .row2 .row2_inner1,
+.row2_inner2 {
+  width: 49%;
+}
+
+/* .hostel .add_new_hostel .row1 .row1_inner1 input {
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background-color: #f0f1f3;
+    margin: 10px 0px 15px 0px;
+    padding: 15px;
+  } */
+.hostel .add_new_hostel .row2 .row2_inner1 select {
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  box-shadow: none;
+  border: none;
+  background-color: #f0f1f3;
+  margin: 10px 0px 15px 0px;
+  padding: 15px;
+}
+.hostel .add_new_hostel .row2 .row2_inner2 select {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  background-color: #f0f1f3;
+  margin: 10px 0px 15px 0px;
+  padding: 15px;
+}
+/* for row two============================= */
+.hostel .add_new_hostel .row3 {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.hostel .add_new_hostel .row3 .row3_inner1 label {
+  color: #cecece;
+  font-size: 17px;
+  font-weight: 550;
+}
+.hostel .add_new_hostel .row3 .row3_inner2 label {
+  color: #cecece;
+  font-size: 17px;
+  font-weight: 550;
+}
+.hostel .add_new_hostel .row3 .row3_inner1,
+.row3_inner2 {
+  width: 49%;
+}
+
+.hostel .add_new_hostel .row3 .row3_inner1 input {
+  width: 100%;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background-color: #f0f1f3;
+  margin: 10px 0px 15px 0px;
+  padding: 15px;
+}
+.hostel .add_new_hostel .row3 .row3_inner2 input {
+  width: 100%;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background-color: #f0f1f3;
+  margin: 10px 0px 15px 0px;
+  padding: 15px;
+}
+/* .hostel .add_new_hostel .row2 .row2_inner1 select {
+      width: 100%;
+      outline: none;
+      cursor: pointer;
+      box-shadow: none;
+      border: none;
+      background-color: #f0f1f3;
+      margin: 10px 0px 15px 0px;
+      padding: 15px;
+    }
+    .hostel .add_new_hostel .row2 .row2_inner2 select {
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      box-shadow: none;
+      background-color: #f0f1f3;
+      margin: 10px 0px 15px 0px;
+      padding: 15px;
+    } */
+.hostel .add_new_hostel .r_save_btn {
+  padding: 10px 25px;
+  width: 200px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 550;
+  background-color: yellowgreen;
+  border: 1px solid yellowgreen;
+}
+.hostel .add_new_hostel .r_save_btn:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+/* all hostel schedule start here ========================= */
+.hostel .all_hostel_schedule {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  margin: 35px 0px;
+}
+.hostel .all_hostel_schedule h1 {
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+.hostel .all_hostel_schedule .header_hostel_schedule_table {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  align-items: center;
+  font-size: 15px;
+}
+.hostel .all_hostel_schedule .header_hostel_schedule_table button {
+  background-color: yellowgreen;
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* hahhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa===================== */
+#hostel_table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 25px 0px;
+  border: 1px solid #ddd;
+}
+#hostel_table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#hostel_table th {
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: yellowgreen;
+  color: #fff;
+}
+#hostel_table td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  color: #7c647c;
+}
+#hostel_table td {
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+span.page-link {
+  cursor: pointer;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+#hostel_table td.h_action #hostel_action_icon {
+  cursor: pointer;
+  color: #04aa6d;
+}
+#hostel_table td.h_action .h_action_content {
+  position: absolute;
+  margin-left: -150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  background-color: #fff;
+  padding: 10px;
+  display: none;
+}
+#showHostelData ul.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#showHostelData ul.pagination li {
+  padding: 10px 15px;
+  list-style: none;
+  transition: 0.5s;
+  color: #000;
+  cursor: pointer;
+  border: 1px solid yellowgreen;
+  margin: 0px 5px;
+}
+#showHostelData ul.pagination li:hover {
+  background-color: yellowgreen;
+  color: #fff;
+}
+#showHostelData ul.pagination li.active {
+  background-color: yellowgreen;
+  color: #fff;
+}
+#showHostelData ul.pagination li.active:hover {
+  background-color: transparent;
+  color: #000;
+}
+#hostel_table td.h_action .h_action_content .h_action_btn_hide {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 10px;
+  background-color: red;
+  padding: 7px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+#hostel_table td.h_action .h_action_content.h_action_btn {
+  display: block;
+}
+
+#hostel_table td.h_action .h_action_content button {
+  border: 1px solid#04aa6d;
+  cursor: pointer;
+  width: 100%;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  color: #000;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 500;
+}

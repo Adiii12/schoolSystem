@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.admin-top .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e8f3f3;
+}
+
+.admin-top .row .admin-left {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #fff;
+  width: 20%;
+  background-color: yellowgreen;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.admin-top .row .admin-left.navSlide {
+  width: 5%;
+}
+
+.admin-top .row .admin-left.navSlide h4 {
+  display: none;
+}
+
+.admin-top .row .admin-left.navSlide .fas,
+.admin-top .row .admin-left.navSlide .far {
+  font-size: 25px;
+  display: block;
+  margin: auto;
+}
+.admin-top .row .admin-left .admin img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  display: block;
+  margin: 30px auto 10px;
+}
+.admin-top .row .admin-left.navSlide .admin img {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.admin-top .row .admin-left.navSlide .tab .tablinks:hover .tooltip {
+  display: block;
+}
+.admin-top .row .admin-left.navSlide .tab .tablinks:hover .tooltip2 {
+  display: block;
+}
+.admin-top .row .admin-left.navSlide .admin h1 {
+  display: none;
+}
+
+.admin-top .row .admin-left .tab {
+  margin-top: 15px;
+}
+
+.admin-top .row .admin-left .tab .tablinks {
+  font-family: "Noto Serif SC", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: inherit;
+  color: #fff;
+  padding: 10px 10px;
+  width: 96%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 5px auto;
+  border-radius: 5px;
+}
+.admin-top .row .admin-left .tab .tablinks .tooltip {
+  position: absolute;
+  background-color: red;
+  padding: 10px 17px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 550;
+  border-radius: 3px;
+  margin-left: 4%;
+  display: none;
+}
+.admin-top .row .admin-left .tab .tablinks .tooltip2 {
+  position: absolute;
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 550;
+  border-radius: 3px;
+  margin-left: 4%;
+  display: none;
+}
+
+.admin-top .row .admin-left .tab .tablinks h4 {
+  margin: 0px 0px 0px 15px;
+}
+
+.admin-top .row .admin-left .tab .tablinks.active {
+  background-color: #fff;
+  color: #000000;
+}
+
+.admin-top .row .admin-left .tab .tablinks:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+.admin-top .row .admin-right {
+  /* margin-left: 20%; */
+  width: 100%;
+  color: #fff;
+  background-color: #f0f1f3;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.admin-top .row .admin-right.navSlide1 {
+  width: 100%;
+  margin-left: 0;
+}
+
+.admin-top .row .admin-right .header {
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: yellowgreen;
+}
+
+.admin-top .row .admin-right .header .header-left .fas {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.admin-top .row .admin-right .header .header-right {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  img {
+  margin: 0px 10px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.admin-top .row .admin-right .header .header-right .header-right-inner-left {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+/*# sourceMappingURL=admin.css.map */

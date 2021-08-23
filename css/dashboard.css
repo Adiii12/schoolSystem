@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard {
+  background-color: #f0f1f3;
+}
+/* .dashboard .welcome_admin {
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard .welcome_admin .welcome_admin_message {
+  width: 80%;
+  background-color: yellowgreen;
+  color: #fff;
+  padding: 20px;
+} */
+/* .dashboard .cover-img {
+  position: relative;
+} */
+
+.dashboard .cover-img img {
+  width: 100%;
+  height: 40vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.dashboard .cover-img .text {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.dashboard .cover-img .text h1 {
+  font-family: "Limelight", cursive;
+  font-size: 70px;
+  color: #e4e6eb;
+}
+
+.dashboard .cover-img .text p {
+  font-size: 23px;
+  line-height: 29px;
+  color: #e4e6eb;
+}
+.all-info {
+  background-color: #f0f1f3;
+}
+.all-info .row {
+  background-color: #f0f1f3;
+  width: 94%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.all-info .row .col {
+  width: 24%;
+}
+
+.all-info .row .col .card {
+  width: 100%;
+  margin: 6% 0px;
+}
+
+.all-info .row .col .card .teacher-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: red;
+  padding: 10px 0px;
+}
+
+.all-info .row .col .card .teacher-inner .column {
+  width: 49%;
+}
+
+.all-info .row .col .card .teacher-inner .column-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.all-info .row .col .card .teacher-inner .column-left h1 {
+  font-size: 60px;
+}
+
+.all-info .row .col .card .teacher-inner .column-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.all-info .row .col .card .teacher-inner .column-right .fa-chart-bar {
+  font-size: 80px;
+  color: #ccc;
+  padding: 0px 7px;
+  opacity: 0.4;
+}
+
+.all-info .row .col .card .teacher-footer {
+  text-align: center;
+  padding: 5px 0px;
+  background-color: #b81717;
+}
+
+.all-info .row .col .card .teacher-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.all-info .row .col .card .attendance-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: blue;
+  padding: 10px 0px;
+}
+
+.all-info .row .col .card .attendance-inner .column {
+  width: 50%;
+}
+
+.all-info .row .col .card .attendance-inner .column-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.all-info .row .col .card .attendance-inner .column-left h1 {
+  font-size: 60px;
+}
+
+.all-info .row .col .card .attendance-inner .column-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.all-info .row .col .card .attendance-inner .column-right .fa-user-plus {
+  font-size: 80px;
+  padding: 0px 7px;
+  opacity: 0.4;
+  color: #ccc;
+}
+
+.all-info .row .col .card .attendance-footer {
+  text-align: center;
+  padding: 5px 0px;
+  background-color: #3636b1;
+}
+
+.all-info .row .col .card .attendance-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.all-info .row .col .card .students-inner {
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0b8a0b;
+}
+
+.all-info .row .col .card .students-inner .column {
+  width: 50%;
+}
+
+.all-info .row .col .card .students-inner .column-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.all-info .row .col .card .students-inner .column-left h1 {
+  font-size: 60px;
+}
+
+.all-info .row .col .card .students-inner .column-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.all-info .row .col .card .students-inner .column-right .fa-chart-pie {
+  opacity: 0.4;
+  font-size: 80px;
+  padding: 0px 7px;
+  color: #ccc;
+}
+
+.all-info .row .col .card .students-footer {
+  text-align: center;
+  padding: 5px 0px;
+  background-color: #17da17;
+}
+
+.all-info .row .col .card .students-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.all-info .row .col .card .accountants-inner {
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: orange;
+}
+
+.all-info .row .col .card .accountants-inner .column {
+  width: 50%;
+}
+
+.all-info .row .col .card .accountants-inner .column-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.all-info .row .col .card .accountants-inner .column-left h1 {
+  font-size: 60px;
+}
+
+.all-info .row .col .card .accountants-inner .column-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.all-info .row .col .card .accountants-inner .column-right .fa-chart-bar {
+  opacity: 0.4;
+  font-size: 80px;
+  padding: 0px 7px;
+  color: #ccc;
+}
+
+.all-info .row .col .card .accountants-footer {
+  text-align: center;
+  padding: 5px 0px;
+  background-color: #e4c17f;
+}
+
+.all-info .row .col .card .accountants-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.all-info .row .col .card .parents-inner {
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #7777fc;
+}
+
+.all-info .row .col .card .parents-inner .column {
+  width: 50%;
+}
+
+.all-info .row .col .card .parents-inner .column-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.all-info .row .col .card .parents-inner .column-left h1 {
+  font-size: 60px;
+}
+
+.all-info .row .col .card .parents-inner .column-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.all-info .row .col .card .parents-inner .column-right .fa-shopping-bag {
+  opacity: 0.4;
+  font-size: 80px;
+  padding: 0px 7px;
+  color: #ccc;
+}
+
+.all-info .row .col .card .parents-footer {
+  text-align: center;
+  padding: 5px 0px;
+  background-color: #3b3b85;
+}
+
+.all-info .row .col .card .parents-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.all-info .row .col .card .stuff-inner {
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #cf2727;
+}
+
+.all-info .row .col .card .stuff-inner .column {
+  width: 50%;
+}
+
+.all-info .row .col .card .stuff-inner .column-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.all-info .row .col .card .stuff-inner .column-left h1 {
+  font-size: 60px;
+}
+
+.all-info .row .col .card .stuff-inner .column-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.all-info .row .col .card .stuff-inner .column-right .fa-chart-pie {
+  opacity: 0.4;
+  font-size: 80px;
+  padding: 0px 7px;
+  color: #ccc;
+}
+
+.all-info .row .col .card .stuff-footer {
+  text-align: center;
+  padding: 5px 0px;
+  background-color: #9b0606;
+}
+
+.all-info .row .col .card .stuff-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.all-info .row .col .card .librarian-inner {
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #cf2727;
+}
+
+.all-info .row .col .card .librarian-inner .column {
+  width: 50%;
+}
+
+.all-info .row .col .card .librarian-inner .column-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.all-info .row .col .card .librarian-inner .column-left h1 {
+  font-size: 60px;
+}
+
+.all-info .row .col .card .librarian-inner .column-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.all-info .row .col .card .librarian-inner .column-right .fa-chart-pie {
+  opacity: 0.4;
+  font-size: 80px;
+  padding: 0px 7px;
+  color: #ccc;
+}
+
+.all-info .row .col .card .librarian-footer {
+  text-align: center;
+  padding: 5px 0px;
+  background-color: #9b0606;
+}
+
+.all-info .row .col .card .librarian-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.all-info .row .col .card .notice-inner {
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #cf2727;
+}
+
+.all-info .row .col .card .notice-inner .column {
+  width: 50%;
+}
+
+.all-info .row .col .card .notice-inner .column-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.all-info .row .col .card .notice-inner .column-left h1 {
+  font-size: 60px;
+}
+
+.all-info .row .col .card .notice-inner .column-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.all-info .row .col .card .notice-inner .column-right .fa-shopping-bag {
+  opacity: 0.4;
+  font-size: 80px;
+  padding: 0px 7px;
+  color: #ccc;
+}
+
+.all-info .row .col .card .notice-footer {
+  text-align: center;
+  padding: 5px 0px;
+  background-color: #9b0606;
+}
+
+.all-info .row .col .card .notice-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+/* .chart {
+  background-color: #fff;
+} */
+
+/*# sourceMappingURL=dashboard.css.map */

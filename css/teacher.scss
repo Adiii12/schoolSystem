@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.t_dlt_btn {
+  background: red;
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid red;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 5px;
+}
+.t_edit_btn {
+  background: green;
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid green;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 5px;
+}
+.t_view_details {
+  background: green;
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid green;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.teacher_section {
+  #errorMessage {
+    position: fixed;
+    top: 20px;
+    margin-left: 10%;
+    z-index: 20;
+    display: none;
+    background-color: red;
+    padding: 10px 30px;
+    width: 20%;
+    color: #fff;
+  }
+  #successMessage {
+    position: fixed;
+    top: 20px;
+    margin-left: 10%;
+    display: none;
+    z-index: 20;
+    width: 20%;
+    background-color: green;
+    padding: 10px 30px;
+    color: #fff;
+  }
+  .teacher_tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 2%;
+    border-bottom: 2px solid yellowgreen;
+    overflow: hidden;
+    h1 {
+      color: #000;
+    }
+    .t_btn_tablinks {
+      background-color: #fff;
+      border: 1px solid #fff;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 10px;
+      transition: 0.3s;
+      font-size: 17px;
+      &:hover {
+        background-color: yellow;
+      }
+      &.active_t {
+        background-color: yellow;
+      }
+    }
+  }
+  .teacher_tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+  #see_teacher {
+    margin: 20px 0px;
+    .teacher_search {
+      .search_input {
+        padding: 10px 5px;
+        width: 250px;
+        margin: 10px 0px;
+        border: 1px solid yellowgreen;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      background-color: #fff;
+    }
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+      background-color: black;
+      color: #fff;
+    }
+    td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+      color: #000;
+    }
+    tr:nth-child(even) {
+      background-color: rgb(230, 227, 227);
+      color: #000;
+    }
+  }
+  #add_teacher {
+    form {
+      background-color: #fff;
+      border: 1px solid yellowgreen;
+      border-radius: 15px;
+      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+      width: 80%;
+      margin: 20px auto;
+      padding: 10px;
+      h2 {
+        font-family: "Lobster", cursive;
+        text-align: center;
+        margin: 15px 0px;
+        color: #000;
+        display: block;
+      }
+      .first_last_name {
+        display: flex;
+        justify-content: space-between;
+        color: #000;
+        .f_left {
+          width: 49%;
+        }
+        .l_right {
+          width: 49%;
+        }
+      }
+      .t_city {
+        display: flex;
+        justify-content: space-between;
+        .t_city_left {
+          width: 49%;
+        }
+        .t_city_right {
+          width: 49%;
+        }
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid yellowgreen;
+        outline: none;
+        font-size: 15px;
+        color: #3e3e3e;
+        font-weight: 500;
+        box-shadow: none;
+        &:focus {
+          border: 1px solid yellow;
+        }
+      }
+      label {
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 500;
+        color: #000;
+      }
+      select {
+        padding: 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        border: 1px solid yellowgreen;
+      }
+      #sub_teacher_btn {
+        padding: 10px 50px;
+        outline: none;
+        border: 1px solid yellowgreen;
+        cursor: pointer;
+        font-size: 17px;
+        background-color: yellow;
+        &:hover {
+          background-color: yellowgreen;
+          border: 1px solid yellow;
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 300;
+  overflow-y: scroll;
+  .modal_body {
+    position: relative;
+    width: 70%;
+    z-index: 301;
+    margin: 70px auto;
+    background: #fff;
+    #hide_edit_modal {
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      background-color: red;
+      padding: 7px;
+      border-radius: 50%;
+      color: #fff;
+      cursor: pointer;
+    }
+    h2 {
+      text-align: center;
+      padding: 15px 0px;
+    }
+    form {
+      width: 100%;
+      margin: 20px auto;
+      padding: 10px;
+      h2 {
+        font-family: "Lobster", cursive;
+        text-align: center;
+        margin: 10px 0px;
+      }
+      .first_last_name {
+        display: flex;
+        justify-content: space-between;
+        .f_left {
+          width: 49%;
+        }
+        .l_right {
+          width: 49%;
+        }
+      }
+      .t_city {
+        display: flex;
+        justify-content: space-between;
+        .t_city_left {
+          width: 49%;
+        }
+        .t_city_right {
+          width: 49%;
+        }
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid yellowgreen;
+        outline: none;
+        font-size: 15px;
+        color: #3e3e3e;
+        font-weight: 500;
+        box-shadow: none;
+        &:focus {
+          border: 1px solid yellow;
+        }
+      }
+      label {
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 500;
+        color: #000;
+      }
+      select {
+        padding: 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        border: 1px solid yellowgreen;
+      }
+      #sub_teacher_btn {
+        padding: 10px 50px;
+        outline: none;
+        border: 1px solid yellowgreen;
+        cursor: pointer;
+        font-size: 17px;
+        background-color: yellow;
+        &:hover {
+          background-color: yellowgreen;
+          border: 1px solid yellow;
+        }
+      }
+    }
+  }
+}
+
+.fa-envelope,
+.fa-instagram,
+.fa-twitter {
+  border: 1px solid red;
+  margin: 20px 10px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  color: #000;
+  &:hover {
+    border: 2px solid rgb(110, 109, 109);
+  }
+}
+// details modals start ======================
+.details_modal {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 300;
+  display: none;
+  overflow-y: scroll;
+  transition: 0.3s;
+  .details_modal_body {
+    position: relative;
+    width: 70%;
+    z-index: 100;
+    margin: 70px auto;
+    background: #fff;
+    #hide_details_modal {
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      background-color: red;
+      padding: 7px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .details_modal_body_inner {
+      padding: 50px 20px;
+      .row {
+        display: flex;
+        .left {
+          width: 30%;
+          img {
+            width: 100%;
+            border: 2px solid #ddd;
+          }
+          .social_media {
+            display: flex;
+            justify-content: center;
+
+            a {
+              color: #000;
+              text-decoration: none;
+            }
+          }
+        }
+        .right {
+          width: 70%;
+          padding: 0px 20px;
+          h2 {
+            color: #000;
+            font-size: 30px;
+            line-height: 40px;
+            font-family: "Josefin Sans", sans-serif;
+          }
+          .mobile {
+            margin: 20px 0px;
+            display: flex;
+            align-items: center;
+            h3 {
+              color: #000;
+            }
+            .fa-phone {
+              color: #ddd;
+              padding: 7px;
+              border-radius: 50%;
+              border: 2px solid #ddd;
+              margin: 0px 15px 0px 0px;
+            }
+          }
+          .address {
+            margin: 20px 0px;
+            display: flex;
+            align-items: center;
+            h3 {
+              color: #000;
+            }
+            .fa-address-card {
+              color: #ddd;
+              padding: 7px;
+              border-radius: 50%;
+              border: 2px solid #ddd;
+              margin: 0px 15px 0px 0px;
+            }
+          }
+          .state {
+            margin: 20px 0px;
+            display: flex;
+            align-items: center;
+            h3 {
+              color: #000;
+            }
+            .fa-monument {
+              color: #ddd;
+              padding: 7px;
+              border-radius: 50%;
+              border: 2px solid #ddd;
+              margin: 0px 15px 0px 0px;
+            }
+          }
+          .qualification {
+            margin: 20px 0px;
+            display: flex;
+            align-items: center;
+            h3 {
+              color: #000;
+            }
+            .fa-graduation-cap {
+              color: #ddd;
+              padding: 7px;
+              border-radius: 50%;
+              border: 2px solid #ddd;
+              margin: 0px 15px 0px 0px;
+            }
+          }
+          .city {
+            margin: 20px 0px;
+            display: flex;
+            align-items: center;
+            h3 {
+              color: #000;
+            }
+            .fa-city {
+              color: #ddd;
+              padding: 7px;
+              border-radius: 50%;
+              border: 2px solid #ddd;
+              margin: 0px 15px 0px 0px;
+            }
+          }
+        }
+      }
+      .zip {
+        margin: 20px 0px;
+        display: flex;
+        align-items: center;
+        h3 {
+          color: #000;
+        }
+        p {
+          color: rgb(138, 135, 135);
+          font-size: 15px;
+          font-weight: 500;
+          margin: 0px 15px 0px 0px;
+          width: 100px;
+        }
+      }
+      .email {
+        margin: 20px 0px;
+        display: flex;
+        align-items: center;
+        h3 {
+          color: #000;
+        }
+        p {
+          width: 100px;
+          color: rgb(138, 135, 135);
+          font-size: 15px;
+          font-weight: 500;
+          margin: 0px 15px 0px 0px;
+        }
+      }
+      .gender {
+        margin: 20px 0px;
+        display: flex;
+        align-items: center;
+        h3 {
+          color: #000;
+        }
+        p {
+          width: 100px;
+          color: rgb(138, 135, 135);
+          font-size: 15px;
+          font-weight: 500;
+          margin: 0px 15px 0px 0px;
+        }
+      }
+    }
+  }
+}
+// details modals end ======================

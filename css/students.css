@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.student_section .student_tab {
+  padding: 0px 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid #fff;
+}
+
+.student_section .student_tab h1 {
+  color: #000;
+}
+
+.student_section .student_tab .student_tab_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.student_section .student_tab .student_tab_inner .s_btn_tablinks {
+  padding: 10px;
+  margin: 10px 0px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.student_section .student_tab .student_tab_inner .s_btn_tablinks:hover {
+  background-color: yellow;
+}
+
+.student_section .student_tab .student_tab_inner .s_btn_tablinks.active_s {
+  background-color: yellow;
+}
+
+.student_section .student_tabcontent_data {
+  padding: 40px 15px;
+}
+
+.student_section .student_tabcontent_data .student_search {
+  margin: 15px 0px;
+}
+
+.student_section .student_tabcontent_data .student_search input {
+  width: 250px;
+  margin: 0px 15px;
+  padding: 10px 5px;
+  border: 1px solid yellowgreen;
+}
+
+.student_section .student_tabcontent_data .student_search input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.student_section .student_tabcontent_data .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.student_section .student_tabcontent_data .row .card {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin: 1% 1%;
+  width: 18%;
+  border: 1px solid #c7c4c4;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.student_section .student_tabcontent_data .row .card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 250px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.student_section .student_tabcontent_data .row .card .s_card_footer h2 {
+  font-size: 15px;
+  padding: 7px 10px;
+  color: #000;
+}
+
+.student_section .student_tabcontent_data .row .card .s_card_footer .student_profile_action {
+  padding: 7px 10px 15px 7px;
+}
+
+.student_section .student_tabcontent_data .row .card .s_card_footer .student_profile_action .s_btn_view {
+  padding: 5px 22px;
+  background-color: #0606fc;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 550px;
+  border: 1px solid #0606fc;
+  cursor: pointer;
+}
+
+.student_section .student_tabcontent_data .row .card .s_card_footer .student_profile_action .s_btn_del {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.student_section .student_tabcontent_data #add_student {
+  width: 80%;
+  border: 1px solid yellowgreen;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.student_section .student_tabcontent_data #add_student form {
+  padding: 15px 15px;
+}
+
+.student_section .student_tabcontent_data #add_student form h2 {
+  font-size: 17px;
+  text-align: center;
+  margin: 30px 0px;
+  font-weight: 600;
+  color: #000;
+}
+
+.student_section .student_tabcontent_data #add_student form label {
+  color: #000;
+}
+
+.student_section .student_tabcontent_data #add_student form .first_last_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.student_section .student_tabcontent_data #add_student form .first_last_name .f_left {
+  width: 49%;
+}
+
+.student_section .student_tabcontent_data #add_student form .first_last_name .f_left input {
+  width: 100%;
+  padding: 7px 5px;
+  margin: 5px 0px 15px 0px;
+  border: 1px solid yellowgreen;
+}
+
+.student_section .student_tabcontent_data #add_student form .first_last_name .f_left input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.student_section .student_tabcontent_data #add_student form .first_last_name .l_right {
+  width: 49%;
+}
+
+.student_section .student_tabcontent_data #add_student form .first_last_name .l_right input {
+  width: 100%;
+  padding: 7px 5px;
+  margin: 5px 0px 15px 0px;
+  border: 1px solid yellowgreen;
+}
+
+.student_section .student_tabcontent_data #add_student form .first_last_name .l_right input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.student_section .student_tabcontent_data #add_student form #s_father {
+  width: 100%;
+  padding: 7px 5px;
+  margin: 5px 0px 15px 0px;
+  border: 1px solid yellowgreen;
+}
+
+.student_section .student_tabcontent_data #add_student form #s_father:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.student_section .student_tabcontent_data #add_student form #s_enroll_year {
+  width: 100%;
+  padding: 7px 5px;
+  margin: 5px 0px 15px 0px;
+  border: 1px solid yellowgreen;
+}
+
+.student_section .student_tabcontent_data #add_student form #s_enroll_year:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.student_section .student_tabcontent_data #add_student form .s_class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.student_section .student_tabcontent_data #add_student form .s_class .s_class_left {
+  width: 49%;
+}
+
+.student_section .student_tabcontent_data #add_student form .s_class .s_class_left input {
+  width: 100%;
+  padding: 7px 5px;
+  margin: 5px 0px 15px 0px;
+  border: 1px solid yellowgreen;
+}
+
+.student_section .student_tabcontent_data #add_student form .s_class .s_class_left input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.student_section .student_tabcontent_data #add_student form .s_class .s_class_right {
+  width: 49%;
+}
+
+.student_section .student_tabcontent_data #add_student form .s_class .s_class_right input {
+  width: 100%;
+  padding: 7px 5px;
+  margin: 5px 0px 15px 0px;
+  border: 1px solid yellowgreen;
+}
+
+.student_section .student_tabcontent_data #add_student form .s_class .s_class_right input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.student_section .student_tabcontent_data #add_student form #s_gender {
+  padding: 7px 5px;
+  margin: 5px 0px 15px 0px;
+  cursor: pointer;
+  border: 1px solid yellowgreen;
+}
+
+.student_section .student_tabcontent_data #add_student form #s_gender:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.student_section .student_tabcontent_data #add_student form #s_academic_year {
+  width: 100%;
+  padding: 7px 5px;
+  margin: 5px 0px 15px 0px;
+  border: 1px solid yellowgreen;
+}
+
+.student_section .student_tabcontent_data #add_student form #s_academic_year:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.student_section .student_tabcontent_data #add_student form #s_student_btn {
+  padding: 7px 25px;
+  margin: 25px 0px;
+  cursor: pointer;
+  color: yellowgreen;
+  border: 1px solid yellowgreen;
+}
+
+.student_section .student_tabcontent_data #add_student form #s_student_btn:hover {
+  background: transparent;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.student_section .student_tabcontent_data #add_student form #s_student_btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=students.css.map */

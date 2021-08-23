@@ -1,0 +1,36 @@
+.student_tabcontent_data .student_tabcontent .student_details_modal {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 400;
+  overflow-y: scroll;
+}
+.student_tabcontent_data
+  .student_tabcontent
+  .student_details_modal
+  .student_details_modal_body {
+  position: relative;
+  width: 70%;
+  z-index: 301;
+  margin: 70px auto;
+  background: #fff;
+}
+.student_tabcontent_data
+  .student_tabcontent
+  .student_details_modal
+  .student_details_modal_body
+  #hide_student_details_modal {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: red;
+  padding: 7px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+

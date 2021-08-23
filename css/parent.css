@@ -1,0 +1,268 @@
+body {
+  background-color: #f0f1f3;
+}
+#parent {
+  padding: 15px 15px;
+}
+#parent h1 {
+  color: #000;
+}
+#parent .parent_location {
+  margin: 15px 0px;
+  display: flex;
+  align-items: center;
+  color: rgb(90, 90, 90);
+}
+#parent .parent_location .fa-chevron-right {
+  margin: 0px 10px;
+}
+#parent .parent_location .all_parent_para {
+  color: yellowgreen;
+}
+#parent .parent_data {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+}
+#parent .parent_data #parents_table #showParentData #parent_loadBtn {
+  padding: 10px 30px;
+  width: 300px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 550;
+  border: 1px solid yellowgreen;
+  background-color: yellowgreen;
+  display: block;
+  margin: auto;
+  z-index: 60000;
+}
+#parent .parent_data #parents_table #showParentData #parent_loadBtn:hover {
+  background-color: transparent;
+  border: 1px solid yellowgreen;
+  color: #000;
+}
+#parent .parent_data .parent_data_header {
+  display: flex;
+  justify-content: space-between;
+}
+#parent .parent_data .parent_data_header .parent_data_btn {
+  padding: 10px 25px;
+  cursor: pointer;
+  background-color: yellowgreen;
+  color: #fff;
+  font-size: 23px;
+  line-height: 20px;
+  font-weight: 600;
+  border: 1px solid yellowgreen;
+  transition: 0.4s;
+}
+#parent .parent_data .parent_data_header .parent_data_btn:hover {
+  border: 1px solid #000;
+  background-color: rgb(33, 33, 129);
+}
+
+#parents_table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 25px 0px;
+  border: 1px solid #ddd;
+}
+#parents_table td,
+#parents_table th {
+  border: 1px solid #ddd;
+  padding: 15px;
+  color: #7c647c;
+}
+#parents_table td {
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+span.page-link {
+  cursor: pointer;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+#parents_table td.p_action #parent_action_icon {
+  cursor: pointer;
+  color: #04aa6d;
+}
+#parents_table td.p_action .p_action_content {
+  position: absolute;
+  margin-left: -150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  background-color: #fff;
+  padding: 10px;
+  display: none;
+}
+#showParentData ul.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#showParentData ul.pagination li {
+  padding: 10px 15px;
+  list-style: none;
+  transition: 0.5s;
+  color: #000;
+  cursor: pointer;
+  border: 1px solid yellowgreen;
+  margin: 0px 5px;
+}
+#showParentData ul.pagination li:hover {
+  background-color: yellowgreen;
+  color: #fff;
+}
+#showParentData ul.pagination li.active {
+  background-color: yellowgreen;
+  color: #fff;
+}
+#showParentData ul.pagination li.active:hover {
+  background-color: transparent;
+  color: #000;
+}
+#parents_table td.p_action .p_action_content .p_action_btn_hide {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 10px;
+  background-color: red;
+  padding: 7px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+#parents_table td.p_action .p_action_content.p_action_btn {
+  display: block;
+}
+
+#parents_table td.p_action .p_action_content button {
+  border: 1px solid#04aa6d;
+  cursor: pointer;
+  width: 100%;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  color: #000;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 500;
+}
+#parents_table td.p_action .p_action_content a.email {
+  background-color: #04aa6d;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid#04aa6d;
+  cursor: pointer;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 500;
+}
+#parents_table td.p_action .p_action_content a.email:hover {
+  background-color: transparent;
+  color: #000;
+}
+#parents_table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#parents_table tr:hover {
+  background-color: #ddd;
+}
+#parents_table td:last-child {
+  background-color: none;
+}
+
+#parents_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: yellowgreen;
+  color: white;
+}
+#parent #parent_modal {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 400;
+  overflow-y: scroll;
+}
+#parent #parent_modal .parent_modal_body {
+  padding: 15px;
+  position: relative;
+  width: 50%;
+  z-index: 301;
+  margin: 70px auto;
+  background: #fff;
+}
+#parent #parent_modal .parent_modal_body #hide_parent_modal {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: red;
+  padding: 7px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+#parent_formData h2 {
+  text-align: center;
+  color: #000;
+  margin: 20px 0px;
+}
+#parent_formData label {
+  color: #000;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 550;
+  line-height: 29px;
+}
+#parent_formData input {
+  width: 100%;
+  margin-bottom: 17px;
+  background-color: #f0f1f3;
+  padding: 15px;
+  border: none !important;
+}
+#parent_formData #s_foreign_key {
+  padding: 10px;
+  cursor: pointer;
+  margin: 25px 10px;
+}
+#parent_formData input:focus {
+  outline: none;
+  box-shadow: none;
+}
+#parent_formData #p_gender {
+  padding: 10px;
+  cursor: pointer;
+  margin: 25px 0px;
+}
+#parent_formData #p_parent_btn {
+  cursor: pointer;
+  width: 200px;
+  text-align: center;
+  display: block;
+  margin: 25px auto;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 23px;
+  background-color: yellowgreen;
+}
+#parent_formData #p_parent_btn:hover {
+  background-color: rgb(33, 33, 129);
+}

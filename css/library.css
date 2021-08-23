@@ -1,0 +1,267 @@
+body {
+  background-color: #f0f1f3;
+}
+#library {
+  padding: 15px 15px;
+}
+#library h1 {
+  color: #000;
+}
+#library .library_location {
+  margin: 15px 0px;
+  display: flex;
+  align-items: center;
+  color: rgb(90, 90, 90);
+}
+#library .library_location .fa-chevron-right {
+  margin: 0px 10px;
+}
+#library .library_location .all_library_para {
+  color: yellowgreen;
+}
+#library .library_data {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+}
+#library .library_data #library_table #showLibraryData #library_loadBtn {
+  padding: 10px 30px;
+  width: 300px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 550;
+  border: 1px solid yellowgreen;
+  background-color: yellowgreen;
+  display: block;
+  margin: auto;
+  z-index: 60000;
+}
+#library .library_data #library_table #showlibraryData #library_loadBtn:hover {
+  background-color: transparent;
+  border: 1px solid yellowgreen;
+  color: #000;
+}
+#library .library_data .library_data_header {
+  display: flex;
+  justify-content: space-between;
+}
+#library .library_data .library_data_header .library_data_btn {
+  padding: 10px 25px;
+  cursor: pointer;
+  background-color: yellowgreen;
+  color: #fff;
+  font-size: 23px;
+  line-height: 20px;
+  font-weight: 600;
+  border: 1px solid yellowgreen;
+  transition: 0.4s;
+}
+#library .library_data .library_data_header .library_data_btn:hover {
+  border: 1px solid #000;
+  background-color: rgb(33, 33, 129);
+}
+
+#library_table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 25px 0px;
+  border: 1px solid #ddd;
+}
+
+#library_table td,
+#library_table th {
+  border: 1px solid #ddd;
+  padding: 20px;
+  color: #7c647c;
+}
+#library_table td {
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+/* span.page-link {
+  cursor: pointer;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+} */
+#library_table td.p_action #library_action_icon {
+  cursor: pointer;
+  position: relative;
+  color: #04aa6d;
+}
+#library_table .l_action_content {
+  position: absolute;
+  margin-left: -150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  background-color: #fff;
+  padding: 10px;
+  display: none;
+}
+#showLibraryData ul.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#showLibraryData ul.pagination li {
+  padding: 10px 15px;
+  list-style: none;
+  transition: 0.5s;
+  color: #000;
+  cursor: pointer;
+  border: 1px solid yellowgreen;
+  margin: 0px 5px;
+}
+#showLibraryData ul.pagination li:hover {
+  background-color: yellowgreen;
+  color: #fff;
+}
+#showLibraryData ul.pagination li.active {
+  background-color: yellowgreen;
+  color: #fff;
+}
+#showLibraryData ul.pagination li.active:hover {
+  background-color: transparent;
+  color: #000;
+}
+#library_table .l_action_content .l_action_btn_hide {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 10px;
+  background-color: red;
+  padding: 7px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+#library_table .l_action_content.l_action_btn {
+  display: block;
+}
+#library_table .l_action_content button {
+  border: 1px solid#04aa6d;
+  cursor: pointer;
+  width: 100%;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  color: #000;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 500;
+}
+/* #library_table td.l_action .l_action_content a.email {
+  background-color: #04aa6d;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid#04aa6d;
+  cursor: pointer;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 500;
+}
+#library_table td.l_action .l_action_content a.email:hover {
+  background-color: transparent;
+  color: #000;
+}
+#library_table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#library_table tr:hover {
+  background-color: #ddd;
+}
+#library_table td:last-child {
+  background-color: none;
+} */
+
+#library_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: yellowgreen;
+  color: white;
+}
+#library #library_modal {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 400;
+  overflow-y: scroll;
+}
+#library #library_modal .library_modal_body {
+  padding: 15px;
+  position: relative;
+  width: 40%;
+  z-index: 301;
+  margin: 70px auto;
+  background: #fff;
+}
+#library #library_modal .library_modal_body #hide_library_modal {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: red;
+  padding: 7px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+#library_formData h2 {
+  text-align: center;
+  color: #000;
+  margin: 20px 0px;
+}
+#library_formData label {
+  color: #000;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 550;
+  line-height: 29px;
+}
+#library_formData input {
+  width: 100%;
+  background-color: #f0f1f3;
+  margin-bottom: 17px;
+  padding: 15px;
+  border: none !important;
+}
+#library_formData input:focus {
+  outline: none;
+  box-shadow: none;
+}
+#library_formData #l_gender {
+  padding: 10px;
+  cursor: pointer;
+  margin: 25px 0px;
+}
+#library_formData #l_library_btn {
+  cursor: pointer;
+  width: 200px;
+  text-align: center;
+  display: block;
+  margin: 25px auto;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 23px;
+  background-color: yellowgreen;
+}
+#library_formData #l_library_btn:hover {
+  background-color: transparent;
+  border: 1px solid yellowgreen;
+  color: #000;
+}

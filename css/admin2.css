@@ -1,0 +1,303 @@
+body {
+  background-color: #f0f1f3;
+}
+.admin-top .row .admin-left.navSlide .admin img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.admin-top .row .admin-left.navSlide .admin h1 {
+  display: none;
+}
+.admin-top .row .admin-right .header .header-right .header-right-inner-right {
+  position: relative;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  img {
+  cursor: pointer;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details {
+  display: none;
+  position: absolute;
+  top: 40px;
+  width: 400px;
+  border-radius: 4px;
+  right: 0px;
+  z-index: 2000;
+  border: 1px solid #ccc;
+  background-color: #323638;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details.show2 {
+  display: block;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details
+  .admin_details_inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10px 30px 10px;
+  border-radius: 4px 4px 0px 0px;
+  background-image: url("../images//admin_cover\ \(2\).jpg");
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details
+  .admin_details_inner
+  .logoutBtn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  font-weight: 600;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details
+  .admin_details_footer {
+  padding: 10px;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details
+  .admin_details_footer
+  .admin_chat {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details
+  .admin_details_footer
+  .admin_chat
+  .admin_msg_count {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: red;
+  color: #fff;
+  align-items: center;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details
+  .open_message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details
+  .openMessage {
+  padding: 6px 15px;
+  cursor: pointer;
+  background-color: rgb(127, 236, 127);
+  color: #fff;
+  border: 1px solid green;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details
+  .admin_message_section {
+  display: flex;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details
+  .admin_message_section
+  .admin_message_section_left {
+  padding: 5px;
+  border-left: none !important;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details
+  .admin_message_section
+  .admin_message_section_left
+  .admin_message_chat {
+  padding: 20px 0px;
+  width: 96%;
+  margin: auto;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  transition: 0.4s;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details
+  .admin_message_section
+  .admin_message_section_left
+  .admin_message_chat
+  .fa-comments {
+  margin: 20px 0px;
+  font-size: 30px;
+  opacity: 0.4;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details
+  .admin_message_section
+  .admin_message_section_left
+  .admin_message_chat:hover
+  .fa-comments {
+  opacity: 1;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details
+  .admin_message_section
+  .admin_message_section_left
+  .admin_message_chat:hover {
+  background-color: yellowgreen;
+}
+
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details
+  .admin_message_section
+  .admin_message_section_right
+  .admin_message_support {
+  padding: 20px 0px;
+  width: 96%;
+  margin: auto;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  transition: 0.4s;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details
+  .admin_message_section
+  .admin_message_section_right {
+  padding: 5px;
+  border-left: none !important;
+  border-right: none !important;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details
+  .admin_message_section
+  .admin_message_section_right
+  .admin_message_support
+  .fa-ticket-alt {
+  margin: 20px 0px;
+  font-size: 30px;
+  opacity: 0.4;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details
+  .admin_message_section
+  .admin_message_section_right
+  .admin_message_support:hover
+  .fa-ticket-alt {
+  opacity: 1;
+}
+.admin-top
+  .row
+  .admin-right
+  .header
+  .header-right
+  .header-right-inner-right
+  .admin_details
+  .admin_message_section
+  .admin_message_section_right
+  .admin_message_support:hover {
+  background-color: rgb(248, 105, 105);
+}

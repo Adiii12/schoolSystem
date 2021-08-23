@@ -1,0 +1,655 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.t_dlt_btn {
+  background: red;
+  color: #fff;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid red;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.t_edit_btn {
+  background: green;
+  color: #fff;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid green;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.t_view_details {
+  background: green;
+  color: #fff;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid green;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.teacher_section #errorMessage {
+  position: fixed;
+  top: 20px;
+  margin-left: 10%;
+  z-index: 20;
+  display: none;
+  background-color: red;
+  padding: 10px 30px;
+  width: 20%;
+  color: #fff;
+}
+
+.teacher_section #successMessage {
+  position: fixed;
+  top: 20px;
+  margin-left: 10%;
+  display: none;
+  z-index: 20;
+  width: 20%;
+  background-color: green;
+  padding: 10px 30px;
+  color: #fff;
+}
+
+.teacher_section .teacher_tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px 2%;
+  border-bottom: 2px solid yellowgreen;
+  overflow: hidden;
+}
+
+.teacher_section .teacher_tab h1 {
+  color: #000;
+}
+
+.teacher_section .teacher_tab .t_btn_tablinks {
+  background-color: #fff;
+  border: 1px solid #fff;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.teacher_section .teacher_tab .t_btn_tablinks:hover {
+  background-color: yellow;
+}
+
+.teacher_section .teacher_tab .t_btn_tablinks.active_t {
+  background-color: yellow;
+}
+
+.teacher_section .teacher_tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.teacher_section #see_teacher {
+  margin: 20px 0px;
+}
+
+.teacher_section #see_teacher .teacher_search .search_input {
+  padding: 10px 5px;
+  width: 250px;
+  margin: 10px 0px;
+  border: 1px solid yellowgreen;
+}
+
+.teacher_section #see_teacher .teacher_search .search_input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.teacher_section #see_teacher table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+}
+
+.teacher_section #see_teacher th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  background-color: black;
+  color: #fff;
+}
+
+.teacher_section #see_teacher td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color: #000;
+}
+
+.teacher_section #see_teacher tr:nth-child(even) {
+  background-color: #e6e3e3;
+  color: #000;
+}
+
+.teacher_section #add_teacher form {
+  background-color: #fff;
+  border: 1px solid yellowgreen;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.teacher_section #add_teacher form h2 {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  margin: 15px 0px;
+  color: #000;
+  display: block;
+}
+
+.teacher_section #add_teacher form .first_last_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #000;
+}
+
+.teacher_section #add_teacher form .first_last_name .f_left {
+  width: 49%;
+}
+
+.teacher_section #add_teacher form .first_last_name .l_right {
+  width: 49%;
+}
+
+.teacher_section #add_teacher form .t_city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.teacher_section #add_teacher form .t_city .t_city_left {
+  width: 49%;
+}
+
+.teacher_section #add_teacher form .t_city .t_city_right {
+  width: 49%;
+}
+
+.teacher_section #add_teacher form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid yellowgreen;
+  outline: none;
+  font-size: 15px;
+  color: #3e3e3e;
+  font-weight: 500;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.teacher_section #add_teacher form input:focus {
+  border: 1px solid yellow;
+}
+
+.teacher_section #add_teacher form label {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #000;
+}
+
+.teacher_section #add_teacher form select {
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 1px solid yellowgreen;
+}
+
+.teacher_section #add_teacher form #sub_teacher_btn {
+  padding: 10px 50px;
+  outline: none;
+  border: 1px solid yellowgreen;
+  cursor: pointer;
+  font-size: 17px;
+  background-color: yellow;
+}
+
+.teacher_section #add_teacher form #sub_teacher_btn:hover {
+  background-color: yellowgreen;
+  border: 1px solid yellow;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 300;
+  overflow-y: scroll;
+}
+
+.modal .modal_body {
+  position: relative;
+  width: 70%;
+  z-index: 301;
+  margin: 70px auto;
+  background: #fff;
+}
+
+.modal .modal_body #hide_edit_modal {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: red;
+  padding: 7px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal .modal_body h2 {
+  text-align: center;
+  padding: 15px 0px;
+}
+
+.modal .modal_body form {
+  width: 100%;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.modal .modal_body form h2 {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.modal .modal_body form .first_last_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal .modal_body form .first_last_name .f_left {
+  width: 49%;
+}
+
+.modal .modal_body form .first_last_name .l_right {
+  width: 49%;
+}
+
+.modal .modal_body form .t_city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal .modal_body form .t_city .t_city_left {
+  width: 49%;
+}
+
+.modal .modal_body form .t_city .t_city_right {
+  width: 49%;
+}
+
+.modal .modal_body form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid yellowgreen;
+  outline: none;
+  font-size: 15px;
+  color: #3e3e3e;
+  font-weight: 500;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal .modal_body form input:focus {
+  border: 1px solid yellow;
+}
+
+.modal .modal_body form label {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #000;
+}
+
+.modal .modal_body form select {
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 1px solid yellowgreen;
+}
+
+.modal .modal_body form #sub_teacher_btn {
+  padding: 10px 50px;
+  outline: none;
+  border: 1px solid yellowgreen;
+  cursor: pointer;
+  font-size: 17px;
+  background-color: yellow;
+}
+
+.modal .modal_body form #sub_teacher_btn:hover {
+  background-color: yellowgreen;
+  border: 1px solid yellow;
+}
+
+.fa-envelope,
+.fa-instagram,
+.fa-twitter {
+  border: 1px solid red;
+  margin: 20px 10px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  color: #000;
+}
+
+.fa-envelope:hover,
+.fa-instagram:hover,
+.fa-twitter:hover {
+  border: 2px solid #6e6d6d;
+}
+
+.details_modal {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 300;
+  display: none;
+  overflow-y: scroll;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.details_modal .details_modal_body {
+  position: relative;
+  width: 70%;
+  z-index: 100;
+  margin: 70px auto;
+  background: #fff;
+}
+
+.details_modal .details_modal_body #hide_details_modal {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: red;
+  padding: 7px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner {
+  padding: 50px 20px;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .left {
+  width: 30%;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .left img {
+  width: 100%;
+  border: 2px solid #ddd;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .left .social_media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .left .social_media a {
+  color: #000;
+  text-decoration: none;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .right {
+  width: 70%;
+  padding: 0px 20px;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .right h2 {
+  color: #000;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .right .mobile {
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .right .mobile h3 {
+  color: #000;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .right .mobile .fa-phone {
+  color: #ddd;
+  padding: 7px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  margin: 0px 15px 0px 0px;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .right .address {
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .right .address h3 {
+  color: #000;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .right .address .fa-address-card {
+  color: #ddd;
+  padding: 7px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  margin: 0px 15px 0px 0px;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .right .state {
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .right .state h3 {
+  color: #000;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .right .state .fa-monument {
+  color: #ddd;
+  padding: 7px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  margin: 0px 15px 0px 0px;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .right .qualification {
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .right .qualification h3 {
+  color: #000;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .right .qualification .fa-graduation-cap {
+  color: #ddd;
+  padding: 7px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  margin: 0px 15px 0px 0px;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .right .city {
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .right .city h3 {
+  color: #000;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .row .right .city .fa-city {
+  color: #ddd;
+  padding: 7px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  margin: 0px 15px 0px 0px;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .zip {
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .zip h3 {
+  color: #000;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .zip p {
+  color: #8a8787;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0px 15px 0px 0px;
+  width: 100px;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .email {
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .email h3 {
+  color: #000;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .email p {
+  width: 100px;
+  color: #8a8787;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0px 15px 0px 0px;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .gender {
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .gender h3 {
+  color: #000;
+}
+
+.details_modal .details_modal_body .details_modal_body_inner .gender p {
+  width: 100px;
+  color: #8a8787;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0px 15px 0px 0px;
+}
+/*# sourceMappingURL=teacher.css.map */

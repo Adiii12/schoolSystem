@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.student_section {
+  .student_tab {
+    padding: 0px 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #fff;
+    h1 {
+      color: #000;
+    }
+    .student_tab_inner {
+      display: flex;
+      align-items: center;
+      .s_btn_tablinks {
+        padding: 10px;
+        margin: 10px 0px;
+        cursor: pointer;
+        background-color: #fff;
+        border: 1px solid #fff;
+        &:hover {
+          background-color: yellow;
+        }
+        &.active_s {
+          background-color: yellow;
+        }
+      }
+    }
+  }
+  .student_tabcontent_data {
+    padding: 40px 15px;
+
+    .student_search {
+      margin: 15px 0px;
+      input {
+        width: 250px;
+        margin: 0px 15px;
+        padding: 10px 5px;
+        border: 1px solid yellowgreen;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      .card {
+        transition: 0.4s;
+        margin: 1% 1%;
+        width: 18%;
+        border: 1px solid rgb(199, 196, 196);
+        background-color: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          object-fit: cover;
+          height: 250px;
+          border-radius: 15px 15px 0px 0px;
+        }
+        .s_card_footer {
+          h2 {
+            font-size: 15px;
+            padding: 7px 10px;
+            color: #000;
+          }
+
+          .student_profile_action {
+            padding: 7px 10px 15px 7px;
+            .s_btn_view {
+              padding: 5px 22px;
+              background-color: rgb(6, 6, 252);
+              color: #fff;
+              font-size: 15px;
+              font-weight: 550px;
+              border: 1px solid rgb(6, 6, 252);
+              cursor: pointer;
+            }
+            .s_btn_del {
+              padding: 5px 15px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    #add_student {
+      width: 80%;
+      border: 1px solid yellowgreen;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 15px;
+      form {
+        padding: 15px 15px;
+        h2 {
+          font-size: 17px;
+          text-align: center;
+          margin: 30px 0px;
+          font-weight: 600;
+          color: #000;
+        }
+        label {
+          color: #000;
+        }
+        .first_last_name {
+          display: flex;
+          justify-content: space-between;
+          .f_left {
+            width: 49%;
+            input {
+              width: 100%;
+              padding: 7px 5px;
+              margin: 5px 0px 15px 0px;
+              border: 1px solid yellowgreen;
+              &:focus {
+                outline: none;
+                box-shadow: none;
+              }
+            }
+          }
+          .l_right {
+            width: 49%;
+            input {
+              width: 100%;
+              padding: 7px 5px;
+              margin: 5px 0px 15px 0px;
+              border: 1px solid yellowgreen;
+              &:focus {
+                outline: none;
+                box-shadow: none;
+              }
+            }
+          }
+        }
+        #s_father {
+          width: 100%;
+          padding: 7px 5px;
+          margin: 5px 0px 15px 0px;
+          border: 1px solid yellowgreen;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+        #s_enroll_year {
+          width: 100%;
+          padding: 7px 5px;
+          margin: 5px 0px 15px 0px;
+          border: 1px solid yellowgreen;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+        .s_class {
+          display: flex;
+          justify-content: space-between;
+          .s_class_left {
+            width: 49%;
+            input {
+              width: 100%;
+              padding: 7px 5px;
+              margin: 5px 0px 15px 0px;
+              border: 1px solid yellowgreen;
+              &:focus {
+                outline: none;
+                box-shadow: none;
+              }
+            }
+          }
+          .s_class_right {
+            width: 49%;
+            input {
+              width: 100%;
+              padding: 7px 5px;
+              margin: 5px 0px 15px 0px;
+              border: 1px solid yellowgreen;
+              &:focus {
+                outline: none;
+                box-shadow: none;
+              }
+            }
+          }
+        }
+        #s_gender {
+          padding: 7px 5px;
+          margin: 5px 0px 15px 0px;
+          cursor: pointer;
+          border: 1px solid yellowgreen;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+        #s_academic_year {
+          width: 100%;
+          padding: 7px 5px;
+          margin: 5px 0px 15px 0px;
+          border: 1px solid yellowgreen;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+        #s_student_btn {
+          padding: 7px 25px;
+          margin: 25px 0px;
+          cursor: pointer;
+          color: yellowgreen;
+          border: 1px solid yellowgreen;
+          &:hover {
+            background: transparent;
+            border: 1px solid #000;
+            color: #000;
+          }
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}
