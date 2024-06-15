@@ -13,21 +13,6 @@
     $email_db = "SELECT * FROM admin";
     $fire_db = mysqli_query($conn,$email_db);
     $row_db = mysqli_fetch_assoc($fire_db); 
-    //image uploading
-    // if($_FILES['file']['name']){     
-    //     move_uploaded_file($_FILES['file']['tmp_name'], "../../../images/".$_FILES['file']['name']);
-     
-    //     $img = "images/".$_FILES['file']['name'];
-     
-    //     $sql="INSERT INTO student( image, fname, lname, father_name, enroll_year, dob, class, gender, academic_year) VALUES 
-    //     ('$img','$fname','$lname','$father_name','$enroll_year','$dob','$class','$gender','$academic_year')";
-         
-    //     if(mysqli_query($conn, $sql)){
-    //         echo 1;
-    //     }else{
-    //         echo 0;
-    //     }
-    //     }
     $target_dir = "../../../uploadAdmin/";
     $img = "uploadAdmin/".$_FILES['file']['name'];
     $target_file = $target_dir . basename($_FILES["file"]["name"]);
